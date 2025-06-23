@@ -1,4 +1,4 @@
-# Import of Maritime Aquarium Fishes to Germany decreases, but is still on a high level (Lede - Project 1)
+# Lede Project 1: Import of Maritime Aquarium Fishes to Germany decreases, but is still on a high level
 
 This is my submission of my first project during the Lede Program for Data Journalism (https://ledeprogram.com/). 
 
@@ -8,13 +8,13 @@ Wild-caught fish for marine aquariums are a threat to the ecosphere. In recent y
 
 ## Proceeding
 
-# Data Sources
+### Data Sources
 
 I mainly used trade data from [Statistisches Bundesamt in Germany](https://www-genesis.destatis.de/datenbank/online). They collect statistics on imports and exports of almost 15,000 products to Germany, among them "live ornamental marine fish". Some of the documents can be downloaded as CSV, but I used the API of the authority. Before starting the analysis, one has to set up a (free) account and an API Key.
 
 In addition, I used data of GDP per capita from the world bank which I downloaded as a CSV. You can find the raw data [in my repository](https://github.com/sophiabmnn/Project_1/blob/main/gdp_percapita_raw.csv).
 
-# Analysis
+### Analysis
 
 Please be aware that the analysis requires several Python packages, including requests, pandas, dotenv, os, xmltodict, StringIO, numpy, deep_translator.
 
@@ -26,13 +26,13 @@ Finally, I merged the dataset with data of GDP per capita from World Bank.
 
 You can find my [Notebook](https://github.com/sophiabmnn/Project_1/blob/main/Project1_TradewithSeaFishes.ipynb) here.
 
-# Results
+### Results
 
 My analysis showed that there was actually a decrease in the import of live ornamental marine fish, comparing 2013 with 2023. However, the numbers are still on a high level. 
 
 Detailed findings - [one table](https://github.com/sophiabmnn/Project_1/blob/main/fishes.csv) showing the general trends and [one table](https://github.com/sophiabmnn/Project_1/blob/main/fishes_countrygdp.csv) showing the exporting countries and respective GDPs - are saved in this repository as well.
 
-### Learnings
+## Learnings
 
 The most difficult part of this analysis was retrieving the data from the API of Statistisches Bundesamt. The documentation is really extensive, but still it was difficult to figure out which parameters I could use to get the data I want to have. In addition, cleaning the data in pandas took some time - as they were quite untidy when I finally received them.
 
